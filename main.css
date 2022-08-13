@@ -1,0 +1,75 @@
+body {
+  background: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: 'Avenir Roman', Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'Avenir Black';
+  src: url('/Web/fonts/avenir-black-webfont.woff2') format('woff2');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('/Web/fonts/avenir-heavy-webfont.woff2') format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Avenir Roman';
+  src: url('/Web/fonts/avenir-roman-webfont.woff2') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Light';
+  src: url('/Web/fonts/avenir-light-webfont.woff2') format('woff2');
+  font-weight: 100;
+}
+
+.typewriter h1 {
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #fff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(27, end), blink-caret 0.75s step-end infinite;
+  max-width: max-content;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+.smiley {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+}
